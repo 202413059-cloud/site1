@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio Auto Builder</title>
-    <link rel="stylesheet" href="builder.css">
+  <meta charset="UTF-8" />
+  <title>Portfolio Auto Builder</title>
+  <link rel="stylesheet" href="builder.css" />
 
-    <!-- JSZip + FileSaver -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-
+  <!-- JSZip + FileSaver (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </head>
 
 <body>
+  <h1>포트폴리오 자동 생성기</h1>
+  <p>아래 정보를 입력한 뒤, ZIP 생성 버튼을 누르면 완성된 포트폴리오 템플릿을 다운로드할 수 있습니다.</p>
 
-<h1>포트폴리오 자동 생성기</h1>
-<p>아래 정보를 입력하면 자동으로 HTML 템플릿이 완성되고, ZIP 파일로 다운로드됩니다.</p>
+  <hr />
 
-<hr>
+  <h2>1. 기본 정보</h2>
 
-<h2>1. 기본 정보 입력</h2>
+  <label>이름</label>
+  <input type="text" id="name" />
 
-<label>이름</label>
-<input type="text" id="name">
+  <label>직무 (예: Frontend Developer)</label>
+  <input type="text" id="role" />
 
-<label>직무 (예: Frontend Developer)</label>
-<input type="text" id="role">
+  <label>한 줄 소개</label>
+  <textarea id="description"></textarea>
 
-<label>한 줄 소개</label>
-<textarea id="description"></textarea>
+  <label>이메일</label>
+  <input type="text" id="email" />
 
-<label>이메일</label>
-<input type="text" id="email">
+  <label>Core Values (쉼표로 구분)</label>
+  <input type="text" id="coreValues" placeholder="Ownership, Problem Solving, Reliability" />
 
-<label>Core Values (쉼표로 구분)</label>
-<input type="text" id="coreValues">
+  <label>Resume PDF 업로드 (선택)</label>
+  <input type="file" id="resume" accept="application/pdf" />
 
-<label>Resume PDF 업로드</label>
-<input type="file" id="resume" accept="application/pdf">
+  <hr />
 
-<hr>
+  <h2>2. 프로젝트들</h2>
+  <div id="projects"></div>
+  <button type="button" id="addProjectBtn">+ 프로젝트 추가</button>
 
-<h2>2. 프로젝트 추가</h2>
+  <hr />
 
-<div id="projects"></div>
+  <button type="button" id="downloadBtn">포트폴리오 ZIP 다운로드</button>
 
-<button id="addProjectBtn">+ 프로젝트 추가</button>
+  <pre id="log" style="margin-top:20px; font-size:0.85rem; color:#555;"></pre>
 
-<hr>
-
-<button id="downloadBtn">포트폴리오 ZIP 다운로드</button>
-
-<script src="builder.js"></script>
-
+  <script src="builder.js"></script>
 </body>
 </html>
-
