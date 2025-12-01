@@ -318,16 +318,62 @@ nav a:hover {
    12. 반응형
 ---------------------------------------------------- */
 
+/* MOBILE RESPONSIVE (max 768px) */
 @media (max-width: 768px) {
+
+  /* 공통 여백 */
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  /* HERO 텍스트 줄이기 */
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
-  .section-title {
-    font-size: 1.5rem;
+  .hero-subtitle {
+    font-size: 1rem;
   }
 
-  nav {
-    display: none;
+  /* NAVIGATION */
+  .nav-inner {
+    flex-direction: column;
+    gap: 0.7rem;
   }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  /* PROJECT GRID → 1열 */
+  .project-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* DETAIL PAGE: 2열 → 1열 */
+  .project-detail .container {
+    display: block !important;
+  }
+
+  .sidebar {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  /* TIMELINE 글자 크기 줄이기 */
+  .timeline-date {
+    font-size: 0.9rem;
+  }
+
+  .timeline-desc {
+    font-size: 1rem;
+  }
+
+  /* CONTACT 버튼 */
+  .resume-button {
+    width: 100%;
+    text-align: center;
+  }
+
 }
