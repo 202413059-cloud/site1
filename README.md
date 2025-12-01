@@ -1,6 +1,6 @@
 markdown
 # **Minimal Developer Portfolio Template**
-미니멀 개발자 포트폴리오 템플릿입니다.  
+미니멀 개발자 포트폴리오 템플릿 
 3개의 HTML 파일만 수정하면 바로 포트폴리오를 완성할 수 있습니다.
 
 ---
