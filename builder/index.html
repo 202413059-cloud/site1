@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    title>Portfolio Auto Builder</title>
+    <link rel="stylesheet" href="builder.css">
+
+    <!-- JSZip + FileSaver -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>포트폴리오 자동 생성기</h1>
+<p>아래 정보를 입력하면 자동으로 HTML 템플릿이 완성되고, ZIP 파일로 다운로드됩니다.</p>
+
+<hr>
+
+<h2>1. 기본 정보 입력</h2>
+
+<label>이름</label>
+<input type="text" id="name">
+
+<label>직무 (예: Frontend Developer)</label>
+<input type="text" id="role">
+
+<label>한 줄 소개</label>
+<textarea id="description"></textarea>
+
+<label>이메일</label>
+<input type="text" id="email">
+
+<label>Core Values (쉼표로 구분)</label>
+<input type="text" id="coreValues">
+
+<label>Resume PDF 업로드</label>
+<input type="file" id="resume" accept="application/pdf">
+
+<hr>
+
+<h2>2. 프로젝트 추가</h2>
+
+<div id="projects"></div>
+
+<button id="addProjectBtn">+ 프로젝트 추가</button>
+
+<hr>
+
+<button id="downloadBtn">포트폴리오 ZIP 다운로드</button>
+
+<script src="builder.js"></script>
+
+</body>
+</html>
 
