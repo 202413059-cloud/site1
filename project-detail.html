@@ -1,62 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Detail — Your Name</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <h1 class="logo">YOUR NAME</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <h1 class="logo">YOUR NAME</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="project-detail container">
+  <!-- DETAIL WRAPPER -->
+  <section class="project-detail">
+    <div class="container" style="display: grid; grid-template-columns: 280px 1fr; gap: 2rem;">
 
-  <h2 class="project-title">PROJECT NAME</h2>
-  <p class="project-subtitle">기술 스택 / 기간 / 역할</p>
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <h3 style="font-weight: 800; font-size: 1.2rem;">PROJECT INFO</h3>
 
-  <!-- C: CONTEXT -->
-  <div class="detail-section">
-    <h3>Context</h3>
-    <p>문제가 무엇이었는가? 어떤 요구사항이 있었는가?</p>
-  </div>
+        <p style="margin-top: 1rem; font-weight: 600;">Role</p>
+        <p>Frontend Developer</p>
 
-  <!-- A: APPROACH -->
-  <div class="detail-section">
-    <h3>Approach</h3>
-    <p>기술 선택 이유, 구조 설계, 전략적 접근.</p>
-  </div>
+        <p style="margin-top: 1rem; font-weight: 600;">Stack</p>
+        <p>HTML · CSS · JavaScript</p>
 
-  <!-- R: RESULT -->
-  <div class="detail-section">
-    <h3>Result</h3>
-    <p>숫자로 말할 수 있는 성과.</p>
-  </div>
+        <p style="margin-top: 1rem; font-weight: 600;">Period</p>
+        <p>2024.01 – 2024.03</p>
 
-  <!-- D: DESIGN & ARCHITECTURE -->
-  <div class="detail-section">
-    <h3>Design & Architecture</h3>
-    <img src="assets/img/architecture.png" class="architecture-img">
-    <p>아키텍처 / ERD / 시퀀스</p>
-  </div>
+        <a href="https://github.com/" class="sidebar-button">View Repo</a>
+        <a href="#" class="sidebar-button" style="background:#333;">Live Demo</a>
+      </aside>
 
-  <!-- S: SUMMARY -->
-  <div class="detail-section">
-    <h3>Summary</h3>
-    <p>무엇을 배웠는가? 나의 역할은?</p>
-  </div>
+      <!-- RIGHT CONTENT -->
+      <div>
 
-</section>
+        <!-- TITLE -->
+        <h2 class="project-title">Project Name</h2>
+        <p class="project-subtitle" style="margin-top: .4rem; color:#666;">
+          기술 스택 / 기간 / 담당 역할 요약
+        </p>
+
+        <!-- C: CHALLENGE -->
+        <div class="detail-section">
+          <h3>Challenge</h3>
+          <p>
+            해결해야 할 문제 또는 요구사항을 구체적으로 작성합니다.
+            예) 클라이언트가 빠르고 반응형이며 유지보수가 쉬운 웹 템플릿을 필요로 했다.
+          </p>
+        </div>
+
+        <!-- A: ACTION -->
+        <div class="detail-section">
+          <h3>Action</h3>
+          <p>
+            기술 선택 이유, 구조 설계, 접근 방법, 역할 수행 등을 작성합니다.
+            예) UI/UX 개선을 위한 미니멀 컴포넌트 설계, SEO 대비 태그 구성 등.
+          </p>
+        </div>
+
+        <!-- R: RESULT -->
+        <div class="detail-section">
+          <h3>Result</h3>
+          <p style="font-weight: 500;">
+            정량적 결과 또는 성과 중심으로 작성합니다.
+            예) 로딩 속도 43% 개선, 유지보수 시간 27% 감소 등.
+          </p>
+        </div>
+
+        <!-- D: DESIGN & ARCHITECTURE -->
+        <div class="detail-section">
+          <h3>Design & Architecture</h3>
+
+          <p>아키텍처, ERD, 컴포넌트 구조, 시퀀스 등을 이미지로 표현합니다.</p>
+
+          <img src="assets/img/architecture.png"
+               alt="Architecture Diagram"
+               style="margin-top: 1rem; border:1px solid #eee; border-radius: 8px;">
+        </div>
+
+        <!-- S: SUMMARY -->
+        <div class="detail-section">
+          <h3>Summary</h3>
+          <p>
+            프로젝트를 통해 배운 점, 개선할 점, 개발 역량을 강조하는 문장을 작성합니다.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
