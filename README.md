@@ -1,13 +1,12 @@
 
 ```markdown
-# Minimal Developer Portfolio Template
-화이트·그레이 베이스 + Cyan 포인트 컬러로 구성된 미니멀 개발자 포트폴리오 템플릿입니다.  
-HTML/CSS 기반으로 제작되어 초보자도 쉽게 수정할 수 있으며,  
+**# Minimal Developer Portfolio Template**
+미니멀 개발자 포트폴리오 템플릿입니다.  
 3개의 HTML 파일만 수정하면 바로 포트폴리오를 완성할 수 있습니다.
 
 ---
 
-## 📁 폴더 구조
+**## 폴더 구조**
 
 ```
 
@@ -24,8 +23,8 @@ HTML/CSS 기반으로 제작되어 초보자도 쉽게 수정할 수 있으며,
 
 ---
 
-## 🎯 템플릿 특징
-
+**## 템플릿 특징
+**
 - 미니멀하고 전문적인 UI  
 - 개발자·프리랜서·취준생에 최적화된 구조  
 - “문제 해결 중심” C.A.R.D.S 구조 제공  
@@ -36,84 +35,80 @@ HTML/CSS 기반으로 제작되어 초보자도 쉽게 수정할 수 있으며,
 
 ---
 
-## ✨ 수정해야 하는 곳(단 3곳)
+**## 수정해야 하는 곳(3개의 파일)**
 
 ### 1) index.html  
-- 이름  
-- 직무 / 소개 문구  
-- Core Values  
-- Contact 이메일  
-- Resume PDF 경로
+**- 이름**  HELLO, I'M <span class="accent">YOUR NAME</span>
+**- 직무 / 소개 문구 ** <p class="hero-subtitle">
+  Frontend Developer · AI Enthusiast · Problem Solver
+</p>
+**- Core Values**
+<div class="value-card">Reliability</div>
+<div class="value-card">Problem Solving</div>
+<div class="value-card">Ownership</div>
+<div class="value-card">Quality & Speed</div>
+**- Contact 이메일**  <p>Email: yourmail@gmail.com</p>
+**- Resume PDF 경로**
+<a href="resume.pdf" class="resume-button">Download Resume</a>
 
 ### 2) projects.html  
 각 프로젝트 카드의  
-- 썸네일 이미지  
-- 프로젝트 제목  
-- 기술 스택 텍스트  
-- 한 줄 설명  
-- 상세 링크(project-detail.html)
+**- 썸네일 이미지**
+<img src="assets/img/sample1.jpg" alt="Project Thumbnail">
+**- 프로젝트 제목**
+ <h3>Portfolio Template</h3>
+**- 기술 스택 텍스트**
+<p class="project-tags">HTML · CSS · Responsive</p>
+**- 한 줄 설명**
+<p class="project-desc">
+  미니멀한 반응형 포트폴리오 웹 템플릿 제작.
+</p>
+**- 상세 링크(project-detail.html)**
+<a href="project-detail.html" class="project-card">
+
 
 ### 3) project-detail.html  
-- 프로젝트명  
-- 역할(Role)  
-- 스택(Stack)  
-- 기간  
-- Challenge / Action / Result / Design / Summary 텍스트  
-- Architecture 이미지 변경
+**- 프로젝트명**
+<h2 class="project-title">Project Name</h2>
+**- 역할(Role) **
+<p>Frontend Developer</p>
+**- 스택(Stack)  **
+<p>HTML · CSS · JavaScript</p>
+**- 기간  **
+<p>2024.01 – 2024.03</p>
+**- Challenge / Action / Result / Design / Summary 텍스트  **
+<h3>Challenge</h3>
+<p>
+  해결해야 할 문제 또는 요구사항을 구체적으로 작성합니다.
+</p>
+<h3>Action</h3>
+<p>
+  기술 선택 이유, 접근 방식 등을 작성합니다.
+</p>
+<h3>Result</h3>
+<p style="font-weight: 500;">
+  정량적 성과를 작성합니다.
+</p>
+
+
+**- Architecture 이미지 변경**
+
 
 ---
 
-## 🎨 색상 시스템
+**##  이미지 변경 방법**
 
-- 배경: #FFFFFF, #F7F7F7  
-- 텍스트: #1A1A1A, #333333  
-- 포인트 컬러(Cyan): #00BCD4  
+이미지 폴더:  assets/img/
 
-폰트는 Google Fonts의 Inter를 사용하며 상업적 이용이 100% 가능합니다.
-
----
-
-## 🧩 주요 구성 요소
-
-### Hero Section  
-이름·직무·한 줄 소개가 크게 표시되는 영역입니다.
-
-### Core Values  
-개발자의 핵심 역량을 한눈에 보여주는 항목 3~4개.
-
-### Skill Radar (선택 수정 가능)  
-레이더 차트는 SVG로 구성되어 쉽게 교체 가능.
-
-### Experience Timeline  
-경험·경력·활동 기록을 연대순으로 보여주는 타임라인.
-
-### Projects Page  
-필터 버튼(All, Solo, Freelance, Team)과 카드 UI를 제공.
-
-### Project Detail (C.A.R.D.S 구조)  
-기업이 가장 선호하는 형태인  
-Challenge / Action / Result / Design / Summary 로 구성된 상세 페이지.
-
-### Sticky Sidebar  
-역할, 기술스택, 링크(Repo, Demo)를 고정된 사이드바에 배치.
+해당 폴더에 새 이미지 파일을 추가하고 
+.html 파일의 HTML 속성(src="assets/img/**xxx.jpg**")을 해당 이미지 이름으로 변경하면 됩니다.
+<img src="assets/img/architecture.png"
+     alt="Architecture Diagram"
+     style="margin-top: 1rem; border:1px solid #eee; border-radius: 8px;">
 
 ---
 
-## 💡 이미지 변경 방법
-
-이미지 폴더:  
-```
-
-assets/img/
-
-```
-
-이미지 파일명만 교체하거나 새 파일을 추가해  
-HTML 속성(src="assets/img/xxx.jpg")을 변경하면 됩니다.
-
----
-
-## 🚀 GitHub Pages로 데모 사이트 배포하기
+**## GitHub Pages로 데모 사이트 배포하기**
 
 1) GitHub 레포로 push  
 2) GitHub 페이지 접속  
@@ -128,14 +123,14 @@ HTML 속성(src="assets/img/xxx.jpg")을 변경하면 됩니다.
 
 ---
 
-## 📌 라이선스
+**##  라이선스**
 
 - 본 템플릿은 개인 포트폴리오 및 상업적 용도로 자유롭게 사용 가능합니다.  
-- 단, 템플릿 자체를 재판매하거나 재배포하는 행위는 금지됩니다.
+- 템플릿 자체를 재판매하거나 재배포하는 행위는 금지됩니다.
 
 ---
 
-## 🙋 문의
+**##  문의**
 
 템플릿 수정을 도와드리거나 커스텀 버전을 제작해드릴 수 있습니다.  
 필요하시면 언제든지 문의 주세요!
