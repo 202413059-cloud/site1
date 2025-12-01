@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Your Name</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" 
+        rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <h1 class="logo">YOUR NAME</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="projects-header">
-  <div class="container">
-    <h2 class="section-title">PROJECTS</h2>
-    
-    <!-- FILTER BUTTONS -->
-    <div class="filter-buttons">
-      <button data-filter="all">All</button>
-      <button data-filter="solo">Solo</button>
-      <button data-filter="freelance">Freelance</button>
-      <button data-filter="team">Team</button>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <h1 class="logo">YOUR NAME</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="projects-list">
-  <div class="container project-grid">
+  <!-- PROJECT HEADER -->
+  <section class="projects-header">
+    <div class="container">
+      <h2 class="section-title">PROJECTS</h2>
 
-    <!-- PROJECT CARD -->
-    <a href="project-detail.html" class="project-card" data-type="solo">
-      <img src="assets/img/sample1.jpg" alt="">
-      <h3>Project Title</h3>
-      <p class="project-tags">React · Node.js · AWS</p>
-      <p class="project-desc">문제 정의 / 핵심 기능 2줄 요약</p>
-    </a>
+      <!-- FILTER BUTTONS -->
+      <div class="filter-buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="solo">Solo</button>
+        <button data-filter="freelance">Freelance</button>
+        <button data-filter="team">Team</button>
+      </div>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- PROJECT LIST -->
+  <section class="projects-list">
+    <div class="container project-grid">
+
+      <!-- SAMPLE PROJECT CARD 1 -->
+      <a href="project-detail.html" class="project-card" data-type="solo">
+        <img src="assets/img/sample1.jpg" alt="Project Thumbnail">
+        <h3>Portfolio Template</h3>
+        <p class="project-tags">HTML · CSS · Responsive</p>
+        <p class="project-desc">
+          미니멀한 반응형 포트폴리오 웹 템플릿 제작. 구조 설계 및 UI/UX 특화.
+        </p>
+      </a>
+
+      <!-- SAMPLE PROJECT CARD 2 -->
+      <a href="project-detail.html" class="project-card" data-type="freelance">
+        <img src="assets/img/sample2.jpg" alt="Project Thumbnail">
+        <h3>Client Business Website</h3>
+        <p class="project-tags">Next.js · Tailwind</p>
+        <p class="project-desc">
+          프리랜서로 참여한 기업 웹사이트 제작. SEO 및 성능 튜닝.
+        </p>
+      </a>
+
+      <!-- SAMPLE PROJECT CARD 3 -->
+      <a href="project-detail.html" class="project-card" data-type="team">
+        <img src="assets/img/sample3.jpg" alt="Project Thumbnail">
+        <h3>Team AI Dashboard</h3>
+        <p class="project-tags">React · FastAPI</p>
+        <p class="project-desc">
+          팀 프로젝트로 진행한 데이터 시각화 대시보드 개발.
+        </p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- OPTIONAL: JS for filtering (no dependencies) -->
+  <script>
+    const buttons = document.querySelectorAll(".filter-buttons button");
+    const cards = document.querySelectorAll(".project-card");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".filter-buttons .active")?.classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        cards.forEach(card => {
+          card.style.display =
+            filter === "all" || card.getAttribute("data-type") === filter
+              ? "block"
+              : "none";
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
