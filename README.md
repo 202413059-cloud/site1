@@ -73,10 +73,7 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 </p>
 
 ```
-Add, remove, or reorder skills as you like — no additional files or setup required.
-
 ### **Experience (Timeline)**
-To edit your experience timeline, open index.html and modify each timeline block inside the <div class="timeline-list">…</div>. Each experience entry follows the structure below — duplicate it to add more items, or edit the date and description as needed.
 ```
 <div class="timeline-item">
   <span class="timeline-date">2024 – Present</span>
@@ -122,7 +119,6 @@ To edit your experience timeline, open index.html and modify each timeline block
 
 ## **Add the projects**
 To add more projects, open projects.html and copy the entire project card block shown below (from <a class="project-card"> to </a>). Paste it under the last card and edit the image, title, tech stack, and description.
-
 ```
 <a href="project-detail.html" class="project-card" data-type="solo">
   <img src="assets/img/sample1.jpg" alt="Project Thumbnail">
