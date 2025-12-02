@@ -128,6 +128,15 @@ To add more projects, open projects.html and copy the entire project card block 
 </a>
 ```
 
+## **Project Type (Solo / Freelance / Team)**
+When adding a new project, choose its type by setting the data-type value inside the project card. This controls how it appears under the filter buttons (All / Solo / Freelance / Team). Use data-type="solo" for personal projects, data-type="freelance" for client work, and data-type="team" for team projects.
+```
+<a href="project-detail.html" class="project-card" data-type="solo"> … </a>
+<a href="project-detail.html" class="project-card" data-type="freelance"> … </a>
+<a href="project-detail.html" class="project-card" data-type="team"> … </a>
+
+```
+
 
 ---
 
