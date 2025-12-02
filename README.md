@@ -66,6 +66,15 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 <a href="resume.pdf" class="resume-button">Download Resume</a>
 ```
 
+### **Skills**
+```
+<p class="skill-list">
+  HTML · CSS · JavaScript · React · Git · Figma
+</p>
+
+```
+Add, remove, or reorder skills as you like — no additional files or setup required.
+
 ---
 
 ## **2) projects.html**
