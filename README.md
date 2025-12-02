@@ -1,42 +1,43 @@
+
+---
+
 markdown
 # **Minimal Developer Portfolio Template**
-미니멀 개발자 포트폴리오 템플릿 
-3개의 HTML 파일만 수정하면 바로 포트폴리오를 완성할 수 있습니다.
+A clean and minimal developer portfolio template.  
+Customize just **3 HTML files** to launch your personal portfolio instantly.
 
 ---
 
-## **폴더 구조**
+## **Folder Structure**
 
 
-/assets
-/css/style.css
-/img/    (이미지 폴더)
+/assets  
+/css/style.css  
+/img/    (image folder)
 
-index.html
-projects.html
-project-detail.html
+index.html  
+projects.html  
+project-detail.html  
 README.md
 
-
 ---
 
+# **Editable Sections (3 Files)**
 
-# **수정해야 하는 부분 (3개 파일)**
-
-각 파일의 다음 부분만 자신의 정보로 교체하면 됩니다.
+Update the following fields in each file with your own information.
 
 ---
 
 ## **1) index.html**
 
-### **이름**
+### **Name**
 ```
 
 HELLO, I'M <span class="accent">YOUR NAME</span>
 
 ```
 
-### **직무 / 소개 문구**
+### **Job Title / Short Introduction**
 ```
 
 <p class="hero-subtitle">
@@ -53,13 +54,13 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 <div class="value-card">Quality & Speed</div>
 ```
 
-### **이메일**
+### **Email**
 
 ```
 <p>Email: yourmail@gmail.com</p>
 ```
 
-### **Resume PDF 경로**
+### **Resume PDF Link**
 
 ```
 <a href="resume.pdf" class="resume-button">Download Resume</a>
@@ -69,33 +70,33 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 
 ## **2) projects.html**
 
-### **썸네일 이미지**
+### **Thumbnail Image**
 
 ```
 <img src="assets/img/sample1.jpg" alt="Project Thumbnail">
 ```
 
-### **프로젝트 제목**
+### **Project Title**
 
 ```
 <h3>Portfolio Template</h3>
 ```
 
-### **기술 스택**
+### **Tech Stack**
 
 ```
 <p class="project-tags">HTML · CSS · Responsive</p>
 ```
 
-### **한 줄 설명**
+### **Short Description**
 
 ```
 <p class="project-desc">
-  미니멀한 반응형 포트폴리오 웹 템플릿 제작.
+  A minimal and responsive portfolio web template.
 </p>
 ```
 
-### **상세 링크**
+### **Detail Page Link**
 
 ```
 <a href="project-detail.html" class="project-card">
@@ -105,63 +106,63 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 
 ## **3) project-detail.html**
 
-### **프로젝트명**
+### **Project Name**
 
 ```
 <h2 class="project-title">Project Name</h2>
 ```
 
-### **역할(Role)**
+### **Role**
 
 ```
 <p>Frontend Developer</p>
 ```
 
-### **스택(Stack)**
+### **Stack**
 
 ```
 <p>HTML · CSS · JavaScript</p>
 ```
 
-### **기간**
+### **Duration**
 
 ```
 <p>2024.01 – 2024.03</p>
 ```
 
-### **C.A.R.D.S 텍스트**
+### **C.A.R.D.S Sections**
 
 #### **Challenge**
 
 ```
-<p>프로젝트의 문제 정의를 작성합니다.</p>
+<p>Describe the main problem or challenge of the project.</p>
 ```
 
 #### **Action**
 
 ```
-<p>해결 과정과 접근 방식을 작성합니다.</p>
+<p>Explain your approach and what you implemented.</p>
 ```
 
 #### **Result**
 
 ```
-<p>정량적 성과 또는 개선 효과를 작성합니다.</p>
+<p>Mention measurable outcomes or improvements.</p>
 ```
 
 #### **Design & Architecture**
 
 ```
-<p>필요 시 구조 설명 또는 이미지를 추가합니다.</p>
+<p>Add structural details or an architecture diagram if needed.</p>
 ```
 
 #### **Summary**
 
 ```
-<p>배운 점과 마무리 내용을 작성합니다.</p>
+<p>Summarize what you learned and the final takeaway.</p>
 ```
 
-### **Architecture 이미지**
+### **Architecture Image**
 
 ```
 <img src="assets/img/architecture.png" alt="Architecture Diagram">
@@ -169,39 +170,46 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 
 ---
 
-# **이미지 변경 방법**
+# **How to Replace Images**
 
-이미지는 다음 경로에 있습니다:
+All template images are stored in:
 
 ```
 assets/img/
 ```
 
-HTML의 `src="assets/img/파일명"` 부분을 원하는 파일명으로 수정하면 됩니다.
+Update the file names in `src="assets/img/filename"` to use your own images.
 
 ---
 
-# **GitHub Pages 배포 방법**
+# **Deploying on GitHub Pages**
 
-1. GitHub Repository로 push
-2. Settings → Pages 이동
-3. Branch를 `main`, Folder를 `/root` 로 설정
-4. Save 클릭
-5. 자동 생성된 URL에서 웹사이트 확인
-   (예: [https://username.github.io/repository-name/](https://username.github.io/repository-name/))
+1. Push the project to your GitHub repository.
+2. Go to **Settings → Pages**.
+3. Set:
 
----
-
-# **라이선스**
-
-* 개인·상업적 용도로 자유롭게 사용 가능
-* 템플릿 자체 재판매 금지
+   * **Branch:** `main`
+   * **Folder:** `/root`
+4. Click **Save**.
+5. Your portfolio will be automatically published.
+   Example:
+   [https://username.github.io/repository-name/](https://username.github.io/repository-name/)
 
 ---
 
-# **문의**
+# **License**
 
-포트폴리오 템플릿 커스텀 작업이 필요하면 문의 바랍니다.
-템플릿 제작자 이메일: lzu32437@gmail.com
+* Free for personal and commercial use.
+* Redistribution or reselling of the template itself is not allowed.
+
+---
+
+# **Contact**
+
+If you need custom modifications or a personalized version of this template, feel free to contact the creator.
+
+Email: **[lzu32437@gmail.com](mailto:lzu32437@gmail.com)**
 
 
+이것도 만들어줄게.
+```
