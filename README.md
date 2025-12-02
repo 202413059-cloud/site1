@@ -75,6 +75,15 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 ```
 Add, remove, or reorder skills as you like — no additional files or setup required.
 
+### **Experience (Timeline)**
+To edit your experience timeline, open index.html and modify each timeline block inside the <div class="timeline-list">…</div>. Each experience entry follows the structure below — duplicate it to add more items, or edit the date and description as needed.
+```
+<div class="timeline-item">
+  <span class="timeline-date">2024 – Present</span>
+  <p class="timeline-desc">Freelance Developer — Web Development / AI Projects</p>
+</div>
+```
+
 ---
 
 ## **2) projects.html**
