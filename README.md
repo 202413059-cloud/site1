@@ -105,12 +105,14 @@ HELLO, I'M <span class="accent">YOUR NAME</span>
 ## **Add the projects**
 To add more projects, open projects.html and copy the entire project card block shown below (from <a class="project-card"> to </a>). Paste it under the last card and edit the image, title, tech stack, and description.
 
+```
 <a href="project-detail.html" class="project-card" data-type="solo">
   <img src="assets/img/sample1.jpg" alt="Project Thumbnail">
   <h3>Project Title</h3>
   <p class="project-tags">HTML · CSS · Responsive</p>
   <p class="project-desc">A clean and minimal responsive portfolio template.</p>
 </a>
+```
 
 
 ---
