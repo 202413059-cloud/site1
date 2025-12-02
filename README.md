@@ -211,5 +211,3 @@ If you need custom modifications or a personalized version of this template, fee
 Email: **[lzu32437@gmail.com](mailto:lzu32437@gmail.com)**
 
 
-이것도 만들어줄게.
-```
