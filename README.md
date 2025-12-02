@@ -198,6 +198,15 @@ When adding a new project, choose its type by setting the data-type value inside
 <p>Summarize what you learned and the final takeaway.</p>
 ```
 
+### **Repo & Demo Link**
+
+```
+<a href="https://github.com/" class="sidebar-button">View Repo</a>
+<a href="https://your-demo-url.com" class="sidebar-button" style="background:#333;">Live Demo</a>
+```
+Replace the URLs with your GitHub repository and your live demo link.
+You can remove one of the buttons if you don't need both.
+
 ### **Architecture Image**
 
 ```
